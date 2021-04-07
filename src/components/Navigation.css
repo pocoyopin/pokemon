@@ -1,0 +1,22 @@
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.nav-item {
+    flex-grow: 1;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-nav {
+    background-color: green;
+}
