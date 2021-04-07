@@ -14,14 +14,14 @@ const Body = () => {
     const [fetch, setFetch] = useState(false)
 
     const handleScroll = (e) => {
-        const bottom = e.target.scrollHeight - e.target.scrollTop < e.target.clientHeight
+        const bottom = e.target.scrollHeight - e.target.scrollTop - 100 < e.target.clientHeight
         if (bottom) {
             setFetch(true)
         }
     }
 
     const handleFetchChange = () => {
-        setFetch(!fetch)
+        setFetch(false)
     }
     
     return (
